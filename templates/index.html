@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Generate template code for the CITs</h1>
+<p>Please provide the input in the same format as provided in the input boxes</p>
+<h4 style="color: red;">Just copy and paste the content inside the constructor and the name of the component</h4>
+
+<form action= "{{url_for('doIt')}}" method="POST">
+    <div style="padding: 40px">
+        <h3>constructor</h3>
+    <textarea type="text" rows="15" cols="100" name="constructor">private someService: SomeService,
+		private someService: SomeService,
+		private someService: SomeService,
+		private someService: SomeService,
+		private someService: SomeService,
+		private someService: SomeService</textarea>
+    </div>
+    <div style="padding: 40px">
+    <h3>Component Name</h3>
+    <input type="text" name="name" value="SomeComponent">
+</div>
+    <input type="submit" style="margin-left: 40px">
+
+</form>
+<hr>
+<div style="padding: 40px">
+    <h3>Output</h3>
+<textarea rows="25" cols="100">{{ output }}</textarea>
+</div>
+
+</body>
+</html>
