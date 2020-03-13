@@ -83,7 +83,7 @@ def doIt():
 
 	res=""
 
-	res+="describe("+comp+"\",() =>{\n\t"+fixture+"\n\t"+compDec+"\n"
+	res+="describe(\""+comp+"\",() =>{\n\t"+fixture+"\n\t"+compDec+"\n"
 
 	for stub in stubDeclarations:
 		res+="\n\t"+stub
